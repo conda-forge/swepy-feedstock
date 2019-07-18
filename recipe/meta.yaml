@@ -1,5 +1,5 @@
 {% set name = "swepy" %}
-{% set version = "1.3.0" %}
+{% set version = "1.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 91ed36a907399ce7a29d763cf74077ce14d55e8bcdf52b6f1e8b5723f48d322f
+  sha256: 47b2dbf0ada5fae33fa011603a32a384c56af41d4a3436ab3a4317ccb493ea4f
 
 build:
   noarch: python
