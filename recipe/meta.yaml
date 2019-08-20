@@ -42,7 +42,7 @@ test:
     - mock_server.py
   imports:
     - swepy
-    - swepy.swepy
+    - swepy.pipeline
     - swepy.nsidcDownloader
     - swepy.process
     - swepy.analysis
