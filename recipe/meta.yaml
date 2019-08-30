@@ -32,6 +32,8 @@ requirements:
     - scikit-image
     - affine
     - netcdf4
+    - fsspec
+    - xarray
 
 test:
   requires:
