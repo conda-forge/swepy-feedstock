@@ -35,6 +35,7 @@ requirements:
     - fsspec
     - xarray
     - mapboxgl
+    - jenkspy
 
 test:
   requires:
