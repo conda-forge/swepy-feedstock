@@ -52,8 +52,8 @@ test:
 
 about:
   home: http://github.com/wino6687/swepy
-  license: LGPLv3
-  license_family: LGPL
+  license: MIT
+  license_family: MIT
 
   license_file: LICENSE
   summary: 'A python package for obtaining and manipulating Tb files from the MEaSUREs database'
