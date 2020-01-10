@@ -3,7 +3,7 @@ About swepy
 
 Home: http://github.com/wino6687/swepy
 
-Package license: LGPLv3
+Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
