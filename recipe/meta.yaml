@@ -27,7 +27,7 @@ requirements:
     - tqdm
     - pynco
     - gdal
-    - scikit-image
+    - scipy
     - affine
     - netcdf4
     - fsspec
