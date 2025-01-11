@@ -6,21 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: a0462e693c4ed689be2e9050c1c7a932a5b015817d0ba6709a0231f090bc9b02
 
 build:
   noarch: python
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install --no-deps --ignore-installed .
 
 requirements:
   host:
-    - python
+    - python {{ python_min }}
     - pip
   run:
     - matplotlib-base
-    - python >=3.6
+    - python >={{ python_min }}
     - pytest
     - pandas
     - requests
@@ -39,6 +39,7 @@ requirements:
 test:
   requires:
     - pytest
+    - python {{ python_min }}
   files:
     - MEASURES/NSIDC-0630.001/2010.01.01/NSIDC-0630-EASE2_N3.125km-F17_SSMIS-2010001-37H-M-SIR-CSU-v1.3.nc
     - MEASURES/NSIDC-0630.001/2010.01.01/NSIDC-0630-EASE2_N6.25km-F17_SSMIS-2010001-19H-M-SIR-CSU-v1.3.nc
